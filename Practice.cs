@@ -26,12 +26,11 @@ public class Practice : MonoBehaviour
 
     void Update()
     {
-
-        
-        
-
+        seconds += Time.deltaTime;
+        if (seconds > 1)
+        {
             DispleyNumber();
-
+        }
         
     }
 }
