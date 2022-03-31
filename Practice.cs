@@ -6,7 +6,7 @@ public class Practice : MonoBehaviour
 {
     float seconds =1;
     int number = 1;
-
+    bool countStop;
     
     void Start()
     {
@@ -15,6 +15,7 @@ public class Practice : MonoBehaviour
 
     void DispleyNumber()
     {
+
         
         Debug.Log(number);
         number++;
@@ -22,15 +23,33 @@ public class Practice : MonoBehaviour
 
     }
 
+    void CountTime()
+    {
+        seconds += Time.deltaTime;　//Time.deltaTimeで時間を調整
+    }
 
 
     void Update()
     {
-        seconds += Time.deltaTime;
+        if (countStop == false)
+        {
+            CountTime();
+        }
+
         if (seconds > 1)
         {
             DispleyNumber();
         }
-        
+
+
+
+        if (number > 10)
+        {
+            countStop = true;
+        }
+
+
+
+
     }
 }
