@@ -4,21 +4,34 @@ using UnityEngine;
 
 public class Practice : MonoBehaviour
 {
-    float second = 1;
+    float seconds =1;
+    int number = 1;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
-        DispleyNumber();
+        
     }
 
     void DispleyNumber()
     {
-        Debug.Log(second);
+        
+        Debug.Log(number);
+        number++;
+        seconds = 0;
+
     }
+
+
 
     void Update()
     {
+
+        
+        
+
+            DispleyNumber();
+
         
     }
 }
