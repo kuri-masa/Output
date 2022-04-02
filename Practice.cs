@@ -31,24 +31,22 @@ public class Practice : MonoBehaviour
 
     void Update()
     {
-        if (countStop == false)
-        {
-            CountTime();
-        }
+        
 
         if (seconds > 1)
         {
             DispleyNumber();
         }
 
-
+        if (countStop == false)
+        {
+            CountTime();
+        }
 
         if (number > 10)
         {
             countStop = true;
         }
-
-
 
 
     }
