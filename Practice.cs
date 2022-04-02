@@ -13,7 +13,7 @@ public class Practice : MonoBehaviour
         
     }
 
-    void DispleyNumber()
+    void DispleyNumber() //実行したらLogにnumberを表示、numberをインクリメント、secondsを0にリセット。
     {
 
         
@@ -23,27 +23,27 @@ public class Practice : MonoBehaviour
 
     }
 
-    void CountTime()
+    void CountTime()　//Time.deltaTimeで時間を調整
     {
-        seconds += Time.deltaTime;　//Time.deltaTimeで時間を調整
+        seconds += Time.deltaTime;　
     }
 
-
+    
     void Update()
     {
-        
+        /* */
 
-        if (seconds > 1)
+        if (seconds > 1)　//一秒ごとにDispleyNumberを実行
         {
             DispleyNumber();
         }
 
-        if (countStop == false)
+        if (countStop == false) //条件が満たされるまでCountTimeを作動
         {
             CountTime();
         }
 
-        if (number > 10)
+        if (number > 10) //number(秒数)が10秒に達したらcountStopをtrueに
         {
             countStop = true;
         }
