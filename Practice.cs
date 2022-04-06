@@ -9,7 +9,7 @@ public class Practice : MonoBehaviour
     /// </summary>
     private float seconds =1;
     private int number = 1;
-    private bool countStop;
+    public bool countStop;
     
     void Start()
     {
