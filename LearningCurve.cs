@@ -14,6 +14,8 @@ public class LearningCurve : MonoBehaviour
     void Start()
     {
         ComputeAge();
+
+        Debug.Log($"文字列には{firstName}のような変数を挿入できる！");
         
     }
 
