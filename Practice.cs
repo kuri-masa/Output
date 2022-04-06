@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Practice : MonoBehaviour
 {
-    float seconds =1;
-    int number = 1;
-    bool countStop;
+    /// <summary>
+    /// 変数
+    /// </summary>
+    private float seconds =1;
+    private int number = 1;
+    private bool countStop;
     
     void Start()
     {
         
     }
 
+    /// <summary>
+    /// クラス
+    /// </summary>
     void DispleyNumber() //実行したらLogにnumberを表示、numberをインクリメント、secondsを0にリセット。
     {
 
