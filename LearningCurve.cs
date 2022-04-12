@@ -12,17 +12,12 @@ public class LearningCurve : MonoBehaviour
     public bool isAuthor = true;
 
 
-    void ComputeAge()
-    {
-        Debug.Log(5 + 4 - 3 / 2 * 1);
-        Debug.Log(5 + (4 - 3) / 2 * 1);
-    }
-
     void Start()
     {
-        Debug.Log($"文字列には{firstName}のような変数を挿入できる！");
+        Debug.Log("PleaseSelectPlayer");
+        GenerateCharacter();
+        Debug.Log("NiceChoise!");
 
-        //Debug.Log(firstName * pi);
     }
 
     // Update is called once per frame
@@ -31,5 +26,9 @@ public class LearningCurve : MonoBehaviour
         
     }
 
-    
+    void GenerateCharacter()
+    {
+        Debug.Log("select Kazu");
+    }
+
 }
