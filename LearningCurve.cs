@@ -14,8 +14,9 @@ public class LearningCurve : MonoBehaviour
 
     void Start()
     {
-        int characterLevel = 32;
-        GenerateCharacter(firstName, characterLevel);
+        // int characterLevel = 32;
+
+        GenerateCharacter();
     }
 
     void Update()
@@ -23,10 +24,9 @@ public class LearningCurve : MonoBehaviour
         
     }
 
-    public int GenerateCharacter(string name, int level)
+    void GenerateCharacter()
     {
-        Debug.LogFormat("Character: {0} - Level: {1}", level, name);
-        return level + 5;
+        Debug.Log($"Character:{firstName} - Level:{currentAge} ");
     }
 
 }
