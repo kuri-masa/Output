@@ -4,29 +4,33 @@ using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
-    public int currentAge = 30;
-    public int addedAge = 1;
+    public string characterAction = "Attack";
     
-    public float pi = 3.14f;
-    public string firstName = "Harrison";
-    public bool isAuthor = true;
-
-
     void Start()
-    {
-        // int characterLevel = 32;
-
-        GenerateCharacter();
-    }
-
-    void Update()
     {
         
     }
 
-    void GenerateCharacter()
+    void Actioin()
     {
-        Debug.Log($"Character:{firstName} - Level:{currentAge} ");
+        switch(characterAction)
+        {
+            case "Heal":
+                Debug.Log("Send potion");
+                break;
+            case "Attack":
+                Debug.Log("Fight!");
+                break;
+            default:
+                Debug.Log("Gurde!");
+                break;
+        }
     }
 
+    void Update()
+    {
+        Actioin();
+    }
+
+   
 }
