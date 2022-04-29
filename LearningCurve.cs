@@ -4,32 +4,40 @@ using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
-    public string characterAction = "Attack";
+    public int diceRoll = 7;
+    public bool check ;
     
     void Start()
     {
         
     }
 
-    void Actioin()
+    void Action()
     {
-        switch(characterAction)
+        switch(diceRoll)
         {
-            case "Heal":
-                Debug.Log("Send potion");
+            case 7:
+                Debug.Log("7");
                 break;
-            case "Attack":
-                Debug.Log("Fight!");
+            case 15:
+                Debug.Log("15");
+                break;
+            case 20:
+                Debug.Log("20");
                 break;
             default:
-                Debug.Log("Gurde!");
+                Debug.Log("Failure");
                 break;
         }
     }
 
     void Update()
     {
-        Actioin();
+        if(check)
+        {
+            Action();
+            check = false;
+        }
     }
 
    
