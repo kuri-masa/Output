@@ -14,21 +14,19 @@ public class LearningCurve : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("PleaseSelectPlayer");
-        GenerateCharacter();
-        Debug.Log("NiceChoise!");
-
+        int characterLevel = 32;
+        GenerateCharacter(firstName, characterLevel);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
 
-    void GenerateCharacter()
+    public int GenerateCharacter(string name, int level)
     {
-        Debug.Log("select Kazu");
+        Debug.LogFormat("Character: {0} - Level: {1}", level, name);
+        return level + 5;
     }
 
 }
